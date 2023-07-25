@@ -1,0 +1,23 @@
+{
+  "description": "Set up filters for AO3 that get automatically applied",
+  "manifest_version": 2,
+  "name": "AO3 auto filter",
+  "version": "1.0",
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "https://archiveofourown.org/*"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "icons/iconx48.png",
+    "default_title": "AO3 Filter",
+    "default_popup": "popup/filter.html"
+  }
+  
+}
